@@ -9,17 +9,14 @@
 
 */
 module.exports = {
-  dataSource: {
-    databaseUrl: fromEnv("MONGODB_URL", ""),
-  },
   serve: {
-    port: process.env.PORT || 3500,
+    port: process.env.PORT || 4000,
   },
   aws: {
     awsAccessKey: fromEnv("CUSTOM_AWS_ACCESS_KEY", ""),
     awsSecretKey: fromEnv("CUSTOM_AWS_SECRET_KEY", ""),
-    awsBucket: fromEnv("CUSTOM_AWS_BUCKET", ""),
-    awsRegion: fromEnv("CUSTOM_AWS_REGION", ""),
+    awsBucket: fromEnv("CUSTOM_AWS_BUCKET", "audio-pen"),
+    awsRegion: fromEnv("CUSTOM_AWS_REGION", "us-west-1"),
   },
   edenAi: {
     aiToken: fromEnv("AI_TOKEN", ""),

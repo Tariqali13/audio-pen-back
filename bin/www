@@ -13,7 +13,7 @@ const serve  = config.get('serve');
  * Get port from environment and store in Express.
  */
 
-const port = normalizePort(serve.port || '3000');
+const port = normalizePort(serve.port || '4000');
 app.set('port', port);
 
 /**
@@ -21,7 +21,7 @@ app.set('port', port);
  */
 
 const server = http.createServer(app).listen(serve.port, function () {
-  console.log('Http server listening on port ' + serve.port);
+  console.log('Https server listening on port ' + serve.port);
 });
 
 /**
