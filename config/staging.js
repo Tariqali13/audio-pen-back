@@ -9,9 +9,6 @@
 
 */
 module.exports = {
-  dataSource: {
-    databaseUrl: fromEnv("MONGODB_URL", ""),
-  },
   serve: {
     port: process.env.PORT || 3500,
   },
