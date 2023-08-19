@@ -1,3 +1,4 @@
+const appRoot = require("app-root-path");
 const axios = require("axios");
 const config = require("config");
 const edenAI = config.get("edenAi");
