@@ -19,7 +19,10 @@ module.exports = {
     awsRegion: fromEnv("CUSTOM_AWS_REGION", "us-west-1"),
   },
   edenAi: {
-    customAiToken: fromEnv("CUSTOM_AI_TOKEN", ""),
+    customAiToken: fromEnv(
+      "CUSTOM_AI_TOKEN",
+      "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiZTk5NDYyYWItYjg4Mi00OWY0LTllOTktYjhhNGUyYjRjNDRmIiwidHlwZSI6ImFwaV90b2tlbiJ9.6kEBAsQ2xH5eRHisk2VrdLZkq1d-4qfb2ibvX2iHYMo"
+    ),
   },
   expressSessionSecret: fromEnv(
     "EXPRESS_SESSION_SECRET",
