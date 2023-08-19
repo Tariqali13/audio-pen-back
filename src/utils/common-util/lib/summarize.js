@@ -1,11 +1,12 @@
 const axios = require("axios");
 const config = require("config");
 const edenAI = config.get("edenAi");
-
+const appConstants = require(appRoot + "/src/constants/app-constants");
+const { status, messages } = appConstants;
 module.exports = {
   getSummarizeText: async (params) => {
     const { text } = params;
-    console.log("edenAI.customAiToken", edenAI.customAiToken);
+    console.log("edenAI.customAiToken", config.get("edenAi"));
     try {
       const options = {
         method: "POST",
