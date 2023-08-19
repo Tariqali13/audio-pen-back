@@ -11,8 +11,8 @@ const serve = config.get("serve");
 const fs = require("fs");
 
 const options = {
-  key: fs.readFileSync("../certificates/audio-pen-key.pem"),
-  cert: fs.readFileSync("../certificates/certificate-audi.pem"),
+  key: fs.readFileSync("certificates/audi-key.pem"),
+  cert: fs.readFileSync("certificates/ce-audi.pem"),
 };
 /**
  * Get port from environment and store in Express.
