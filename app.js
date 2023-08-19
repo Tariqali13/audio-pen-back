@@ -8,6 +8,7 @@ const cors = require("cors");
 const expressSessionSecret = config.get("expressSessionSecret");
 
 const app = express();
+require("dotenv").config();
 
 const corsOpt = {
   origin: "*",
