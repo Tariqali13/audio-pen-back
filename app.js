@@ -6,6 +6,7 @@ const session = require("express-session");
 const config = require("config");
 const cors = require("cors");
 const expressSessionSecret = config.get("expressSessionSecret");
+const fs = require("fs");
 
 const app = express();
 
@@ -15,6 +16,7 @@ const corsOpt = {
   exposedHeaders: "authorization",
   maxAge: 10 * 60,
 };
+
 
 app.use(cors(corsOpt));
 // Initializes passport and passport sessions
