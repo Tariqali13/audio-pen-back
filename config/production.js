@@ -15,11 +15,11 @@ module.exports = {
   aws: {
     awsAccessKey: fromEnv("CUSTOM_AWS_ACCESS_KEY", ""),
     awsSecretKey: fromEnv("CUSTOM_AWS_SECRET_KEY", ""),
-    awsBucket: fromEnv("CUSTOM_AWS_BUCKET", "audio-pen"),
-    awsRegion: fromEnv("CUSTOM_AWS_REGION", "us-west-1"),
+    awsBucket: fromEnv("CUSTOM_AWS_BUCKET", ""),
+    awsRegion: fromEnv("CUSTOM_AWS_REGION", ""),
   },
   edenAi: {
-    aiToken: fromEnv("AI_TOKEN", ""),
+    customAiToken: fromEnv("CUSTOM_AI_TOKEN", ""),
   },
   expressSessionSecret: fromEnv(
     "EXPRESS_SESSION_SECRET",

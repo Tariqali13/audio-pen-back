@@ -19,7 +19,7 @@ module.exports = {
     awsRegion: fromEnv("CUSTOM_AWS_REGION", "us-west-1"),
   },
   edenAi: {
-    aiToken: fromEnv("AI_TOKEN", ""),
+    customAiToken: fromEnv("CUSTOM_AI_TOKEN", ""),
   },
   expressSessionSecret: fromEnv(
     "EXPRESS_SESSION_SECRET",
