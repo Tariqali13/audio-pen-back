@@ -18,6 +18,7 @@ module.exports = {
           language: "en",
         },
       };
+      console.log("options", options, edenAI.aiToken);
       const response = await axios.request(options);
       return response;
     } catch (e) {
@@ -40,6 +41,7 @@ module.exports = {
           language: "en",
         },
       };
+      console.log("options2", options2, edenAI.aiToken);
       const topic = await axios.request(options2);
       return topic;
     } catch (e) {
